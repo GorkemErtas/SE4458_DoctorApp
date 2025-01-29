@@ -1,0 +1,103 @@
+/* 🌟 Genel Stil */
+.review-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+}
+
+/* 📌 Başlık */
+.review-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #50fa7b;
+    margin-bottom: 20px;
+}
+
+/* ⭐ Yıldız Derecelendirme */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.star {
+    font-size: 40px;
+    cursor: pointer;
+    color: #44475a;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.star.filled {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.star:hover {
+    color: #ffdb4d;
+    transform: scale(1.2);
+}
+
+/* 📝 Yorum Alanı */
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background: #44475a;
+    color: white;
+    outline: none;
+    resize: none;
+}
+
+textarea:focus {
+    border: 2px solid #50fa7b;
+}
+
+/* 📌 Gönder Butonu */
+button {
+    background: #50fa7b;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #33d17a;
+}
+
+/* ✅ Başarı Mesajı */
+.review-container p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #50fa7b;
+    margin-top: 20px;
+}
+
+/* 📱 Responsive Tasarım */
+@media (max-width: 768px) {
+    .star {
+        font-size: 35px;
+    }
+
+    textarea {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

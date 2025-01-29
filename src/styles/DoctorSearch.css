@@ -1,0 +1,145 @@
+/* 🌟 Genel Stil */
+.doctor-search-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+}
+
+/* 🔎 Başlık */
+.search-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #50fa7b;
+    margin-bottom: 20px;
+}
+
+/* 📌 Arama Formu */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* 🔍 Arama Input */
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background: #44475a;
+    color: white;
+    outline: none;
+}
+
+.search-input:focus {
+    border: 2px solid #50fa7b;
+}
+
+/* 🌍 Dropdown Stili */
+.dropdown {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background: #44475a;
+    color: white;
+    outline: none;
+    width: 200px;
+}
+
+.dropdown:disabled {
+    background: #666;
+}
+
+/* 🔍 Arama Butonu */
+.search-button {
+    background: #50fa7b;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    background: #33d17a;
+}
+
+/* 📌 Otomatik Tamamlama Listesi */
+.suggestions-list {
+    background: #282a36;
+    list-style: none;
+    padding: 0;
+    margin-top: -5px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.suggestion-item {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    transition: background 0.3s ease;
+}
+
+.suggestion-item:hover {
+    background: #50fa7b;
+    color: black;
+}
+
+/* 📍 Doktor Listesi */
+.doctor-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* 👨‍⚕️ Doktor Kartı */
+.doctor-item {
+    background: #282a36;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.doctor-item:hover {
+    transform: scale(1.02);
+}
+
+/* ❌ Sonuç Yok */
+.no-results {
+    font-size: 16px;
+    color: #ff5555;
+    font-weight: bold;
+}
+
+/* 📱 Responsive Tasarım */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-input,
+    .dropdown {
+        width: 100%;
+    }
+
+    .suggestions-list {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,119 @@
+/* 🌟 Genel Stil */
+.appointment-booking-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+}
+
+/* 🏥 Doktor Bilgileri Kartı */
+.doctor-info {
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.doctor-info h1 {
+    font-size: 26px;
+    color: #50fa7b;
+}
+
+.doctor-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.doctor-info strong {
+    color: #ff79c6;
+}
+
+/* 📍 Google Maps Alanı */
+.google-map {
+    background: #282a36;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* 📅 Randevu Formu */
+.booking-form {
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.booking-form h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #50fa7b;
+}
+
+/* 📝 Form Stili */
+.booking-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background: #44475a;
+    color: white;
+    outline: none;
+}
+
+.booking-form input:focus {
+    border: 2px solid #50fa7b;
+}
+
+/* 🔥 Hata Mesajı */
+.error-message {
+    color: #ff5555;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 📌 Gönder Butonu */
+.booking-form button {
+    background: #50fa7b;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.booking-form button:hover {
+    background: #33d17a;
+}
+
+/* 📱 Responsive Tasarım */
+@media (max-width: 768px) {
+    .doctor-info,
+    .google-map,
+    .booking-form {
+        text-align: center;
+    }
+
+    .booking-form button {
+        width: 100%;
+    }
+}

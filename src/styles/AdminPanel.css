@@ -1,0 +1,143 @@
+/* Genel Admin Paneli Stili */
+.admin-panel-container {
+  background-color: #1e1e2e;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Bölümü */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #282a36;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.admin-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #50fa7b;
+}
+
+/* Çıkış Butonu */
+.logout-button {
+  background: #ff5555;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background: #ff3333;
+}
+
+/* İçerik Bölümü */
+.admin-content {
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* Başlıklar */
+.content-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #50fa7b;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+/* Bekleyen Onay Listesi */
+.approval-list {
+  background: #282a36;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.approval-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #44475a;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.approval-item:hover {
+  transform: scale(1.02);
+}
+
+/* Onay Butonu */
+.approve-button {
+  background: #50fa7b;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.approve-button:hover {
+  background: #33d17a;
+}
+
+/* Onaylanmış Doktorlar */
+.approved-list {
+  background: #282a36;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.approved-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #44475a;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.approved-status {
+  background: #50fa7b;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .admin-header {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .approval-item, .approved-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .approve-button {
+      margin-top: 10px;
+  }
+}

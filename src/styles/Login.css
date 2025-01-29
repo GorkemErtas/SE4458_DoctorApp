@@ -1,0 +1,126 @@
+/* 🌟 Genel Stil */
+.login-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1e2e;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🏠 Login Kartı */
+.login-form-section {
+  background: #282a36;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* 📌 Başlık */
+.login-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #50fa7b;
+  margin-bottom: 20px;
+}
+
+/* 📜 Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 📝 Form Elemanları */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  background: #44475a;
+  color: white;
+  outline: none;
+}
+
+.login-form input:focus {
+  border: 2px solid #50fa7b;
+}
+
+/* 🔥 Hata Mesajı */
+.error-message {
+  color: #ff5555;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 📌 Giriş Butonu */
+.login-button {
+  background: #50fa7b;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: #33d17a;
+}
+
+/* 📜 Bilgi Bölümü */
+.login-info-section {
+  margin-left: 40px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.login-info-section h2 {
+  font-size: 22px;
+  color: #50fa7b;
+  margin-bottom: 10px;
+}
+
+.login-info-section p {
+  font-size: 16px;
+  color: #bbbbbb;
+}
+
+/* 🖼️ Bilgi Görseli */
+.login-illustration {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* 📱 Responsive Tasarım */
+@media (max-width: 768px) {
+  .login-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .login-info-section {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+  }
+}

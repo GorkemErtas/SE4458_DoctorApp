@@ -1,0 +1,101 @@
+/* 🌟 Genel Stil */
+.home-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1e2e;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🏠 Admin Giriş Butonu */
+.admin-login {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.admin-button {
+  background: #ff4d4d;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.admin-button:hover {
+  background: #e63946;
+}
+
+/* 📌 Başlık */
+.home-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #50fa7b;
+  margin-bottom: 15px;
+}
+
+/* 📜 Açıklama */
+.home-description {
+  font-size: 18px;
+  color: #bbbbbb;
+  margin-bottom: 30px;
+}
+
+/* 📌 Butonlar */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 🔵 Mavi Buton (Doktor Kaydı) */
+.button-blue {
+  background: #007bff;
+}
+
+/* 🟢 Yeşil Buton (Doktor Arama) */
+.button-green {
+  background: #50fa7b;
+}
+
+/* 🎨 Genel Buton Stili */
+.home-button {
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Tasarım */
+@media (max-width: 768px) {
+  .home-buttons {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .home-title {
+      font-size: 26px;
+  }
+
+  .home-description {
+      font-size: 16px;
+  }
+}
